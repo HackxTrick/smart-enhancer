@@ -1,5 +1,5 @@
 """
-Author: Bisnu Ray
+Author: GAURAV 
 GitHub: https://github.com/bisnuray/
 Description: A Telegram bot to enhance photos using the Remini API.
 """
@@ -12,10 +12,10 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = Bot(token='YOUR_TOKEN_HERE')   # REPLACE YOUR TELEGRAM BOT TOKEN HERE
+bot = Bot(token='7167485135:AAHo7lc8M4YU2bB53VE76Jca0e43DMSOdt0')   # REPLACE YOUR TELEGRAM BOT TOKEN HERE
 dp = Dispatcher(bot)
 
-API_KEY = "REMINI_API_KEY"   # REPLACE YOUR REMINI API KEY THAT HAS CREDITS
+API_KEY = "9Hy_JTjN3Cz50b9lwHoDMksrh_5hyctyUZN3aQFtwCYhZVw8"   # REPLACE YOUR REMINI API KEY THAT HAS CREDITS
 CONTENT_TYPE = "image/jpeg"
 _TIMEOUT = 60
 _BASE_URL = "https://developer.remini.ai/api"
@@ -78,14 +78,14 @@ async def enhance_photo_and_send_link(file_path: str, chat_id: int):
 async def start_command(message: types.Message):
     # Create the inline keyboard and buttons
     keyboard = InlineKeyboardMarkup(row_width=2)
-    dev_button = InlineKeyboardButton("Dev 👨‍💻", url="https://t.me/TheSmartBisnu")
-    update_button = InlineKeyboardButton("Update ✅", url="https://t.me/PremiumNetworkTeam")
+    dev_button = InlineKeyboardButton("Dev 👨‍💻", url="https://t.me/ANIME_TIMETV")
+    update_button = InlineKeyboardButton("Update ✅", url="https://t.me/GAURAV_BOTS")
     keyboard.add(dev_button, update_button)
 
     # Send the welcome message with the inline keyboard
     await bot.send_message(
         message.chat.id,
-        "<b>Welcome! I am a Smart Enhancer BOT. Please Send me a photo to enhance.</b>",
+        "<b>Welcome! I am a Smart Enhancer BOT. Please Send me a photo to enhance and see the magic.</b>",
         parse_mode='html',
         reply_markup=keyboard
     )
